@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+
+.App {
+  font-family: 'Rye', cursive;
+  background: url("../src/assets/annie-spratt-L6GydBHMVGQ-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-color: #282c34;
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
+  padding-top: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.lvlup {
+  padding: 0 10px;
+}
+
+.sob {
+  width: 100px;
+  font-size: 24px;
+  line-height: 30px;
+  color: #E7E7E7;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.8);
+  position: relative;
+  top: -120px;
+  left: 15px;
+}
+
+.wrapper-up {
+  width: 255px;
+  position: relative;
+  top: -110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.total-xp {
+  width: 110px;
+  height: 30px;
+  background: rgba(219, 208, 168, 0.80);
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  box-shadow: inset 2.5px 3px 1px rgba(0, 0, 0, 0.35);
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 5px;
+  margin-bottom: 10px;
+  display: flex;
+  align-self: flex-end;
+}
+
+.xp-history {
+  width: 255px;
+  height: 30px;
+  background: rgba(175, 175, 175, 0.56);
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  box-shadow: inset 2.5px 3px 1px rgba(0, 0, 0, 0.35);
+  border-radius: 3px;
+  padding: 5px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.xpbutton {
+  width: 72px;
+  height: 50px;
+  background: rgba(219, 208, 168, 0.80);;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  box-shadow: 1.5px 2px 0px #2E1B37;
+  border-radius: 5px;
+  font-family: 'Rye', cursive;
+  font-size: 22px;
+  line-height: 30px;
+  margin: 5px 10px;
+}
+
+.inputxp {
+  width: 72px;
+  height: 46px;
+  background: rgba(219, 208, 168, 0.80);;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  box-shadow: 1.5px 2px 0px #2E1B37;
+  border-radius: 5px;
+  font-family: 'Rye', cursive;
+  font-size: 22px;
+  line-height: 30px;
+  margin: 5px 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.between-wrapper {
+  width: 255px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.toogle {
+  position: relative;
+  top:15px;
+  width: 70px;
+  height: 2px;
+  border-radius: 50%;
+  background-color: #101010;
+} 
+
+.pin {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  padding: 6px 18px;
+  position: relative;
+  top: -10px;
+  left: -10px; 
+  transition: left ease .5s;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+button.on .pin {
+  left: 30px;
+  background:rgb(142, 37, 37);
+}
+
+button.off .pin {
+  background:rgb(175, 205, 175);
+}
+
+button:focus,
+button:active { outline: none; }
+button::-moz-focus-inner { border: 0; }
+
+.money-history {
+  width: 255px;
+  height: 29px;
+  background: rgba(175, 175, 175, 0.56);
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  box-shadow: inset 2.5px 3px 1px rgba(0, 0, 0, 0.35);
+  border-radius: 2px;
+  margin: 10px;
+  padding: 5px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.total-money-wrap {
+  width: 130px;
+  height: 30px;
+  background: rgba(175, 205, 175, 0.76);
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  box-shadow: inset 2.5px 3px 1px rgba(0, 0, 0, 0.35);
+  border-radius: 2px;
+  padding: 5px;
+  text-align: right;
+} 
+
+.three-grid {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row: 1fr 1fr;
+}
+
+.money {
+  text-align: center;
+  width: 84px;
+  height: 40px;
+  background: #c7d8bd;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
+  margin: 12px 6px;
+  padding: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.round {
+  width: 63px;
+  height: 28px;
+  background: #e7e6e6;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 50%;
+  font-family: 'Rye', cursive;
+  text-align: center;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
